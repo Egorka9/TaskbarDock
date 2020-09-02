@@ -160,8 +160,11 @@ type
 
     // System functions
     function SystemUsesLightTheme: Boolean;
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> parent of f26eef2... Fix refresh of taskbars on explorer restart
   public
     { Public declarations }
     AppPath, AppFolder, AppExe: String;
@@ -245,8 +248,11 @@ begin
   chkCenter.Checked := mnuCenter.Checked;
 end;
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> parent of f26eef2... Fix refresh of taskbars on explorer restart
 procedure TForm1.CreateParams(var Params: TCreateParams);
 var
   AeroEnabled: LongBool;
@@ -401,8 +407,11 @@ begin
 
   Self.ThemeManager := ThemeManager;
   AutoStartState;
+<<<<<<< HEAD
   //CreateDB;
   ResetDB;
+=======
+>>>>>>> parent of f26eef2... Fix refresh of taskbars on explorer restart
   Init;
   tmrUpdateTBinfo.Enabled := True;
   LoadINI;
@@ -1201,7 +1210,7 @@ var
 begin
   if Msg.Msg = fwm_TaskbarRestart then
   begin
-    Taskbars.Refresh;
+    Taskbars.UpdateTaskbarInfo;
   end
   else
   begin
